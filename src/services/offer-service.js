@@ -50,40 +50,6 @@ export const postOffer = (data) => {
 };
 
 /**
- * Get offer comments
- */
-
-export const getOfferComments = (_id) => {
-    return axios.get(`offer_comment/${_id}`);
-};
-
-/**
- * Post offer comment
- */
-
-export const postOfferComment = (data) => {
-    return axios.post('offer_comment', data);
-};
-
-/**
- * Post offer report
- */
-
-export const postOfferReport = (data) => {
-    axios.defaults.headers.common['Authorization'] = getLoggedUserToken();
-    return axios.post('offer/report', data);
-};
-
-/**
- * Post offer evaluation
- */
-
-export const postOfferEvaluation = (data) => {
-    axios.defaults.headers.common['Authorization'] = getLoggedUserToken();
-    return axios.post('offer_evaluation', data);
-};
-
-/**
  * Get offer categories
  */
 

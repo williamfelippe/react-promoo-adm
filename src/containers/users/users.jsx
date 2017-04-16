@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import {Row} from "react-materialize";
-import OfferList from "../../components/offers/offer-list";
+import UserList from "../../components/users/user-list";
 
-export default class Offers extends Component {
+export default class Users extends Component {
     constructor() {
         super();
         this.state = {
-            offers: {},
+            users: {},
             loading: false
         };
     }
@@ -16,12 +16,12 @@ export default class Offers extends Component {
             <Row>
                 <Col s={12}>
                     <h1>
-                        Ofertas
+                        Usuários
                     </h1>
                 </Col>
 
                 <Col s={12}>
-                    <OfferList offers={this.state.offers} />
+                    <UserList users={this.state.users} />
                 </Col>
             </Row>
         )
