@@ -45,7 +45,7 @@ export const getLoggedUser = () => {
 
 export const isLoggedIn = () => {
     const user = Store.get('user');
-    return (user && user !== undefined);
+    return (user && user !== undefined && user.admin);
 };
 
 export const clearUserStore = () => {

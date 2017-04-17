@@ -1,11 +1,20 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import {Link} from "react-router";
 
 export default class Menu extends Component {
     render() {
         return (
-            <Row>
-            </Row>
+            <ul>
+                <li>
+                    <Link to="/ofertas"></Link>
+                </li>
+                <li>
+                    <Link to="/lojas"></Link>
+                </li>
+                <li>
+                    <Link to="/usuarios"></Link>
+                </li>
+            </ul>
         )
     }
 }
