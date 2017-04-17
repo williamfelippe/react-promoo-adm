@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import {Row, Col} from "react-materialize";
 import UserList from "../../components/users/user-list";
 
 export default class Users extends Component {

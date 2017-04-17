@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import {Row, Col} from "react-materialize";
 import OfferList from "../../components/offers/offer-list";
 
 export default class Offers extends Component {

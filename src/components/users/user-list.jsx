@@ -1,16 +1,12 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import UserItem from "./user-item";
 
 export default class UserList extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const {users} = this.props;
 
-        const userList = user.map((user) => {
-            <li>
+        const userList = users.map((user) => {
+            <li key={user._id}>
                 <UserItem user={user} />
             </li>
         });

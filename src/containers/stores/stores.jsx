@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import {Row, Col} from "react-materialize";
 import StoreList from "../../components/stores/store-list";
 
 export default class Stores extends Component {

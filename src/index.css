@@ -1,5 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+/* GENERAL CONFIGURATION OF APP */
+html {
+    color: rgba(27, 28, 57, 0.8) !important;
+    font-size: 14px;
+}
+
+.moo-app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    margin: 40px 0 60px;
 }

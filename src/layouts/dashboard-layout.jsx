@@ -1,14 +1,16 @@
 import React, {Component} from "react";
-import "../components/system/header";
-import "../components/system/footer";
+import Header from "../components/system/header";
+import Footer from "../components/system/footer";
 
 export default class DashboardLayout extends Component {
     render() {
         return (
-            <div>
+            <div className="moo-app">
                 <Header />
 
-                <main></main>
+                <main>
+                    {this.props.children}
+                </main>
 
                 <Footer />
             </div>
