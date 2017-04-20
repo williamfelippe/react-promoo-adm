@@ -15,6 +15,6 @@ export default class StoreList extends Component {
             <ul>
                 {storesList}
             </ul>
-        )
+        );
     }
 }

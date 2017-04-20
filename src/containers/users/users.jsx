@@ -14,13 +14,11 @@ export default class Users extends Component {
     render() {
         return (
             <Row>
-                <Col xs={12}>
+                <Col xs="12">
                     <h1>
                         Usuários
                     </h1>
-                </Col>
 
-                <Col xs={12}>
                     <UserList users={this.state.users} />
                 </Col>
             </Row>

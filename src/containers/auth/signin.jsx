@@ -12,7 +12,8 @@ export default class Signin extends Component {
         super();
         this.state = {
             email: "",
-            password: ""
+            password: "",
+            loading: false
         };
     }
 
@@ -26,6 +27,8 @@ export default class Signin extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+
+        this.setState({loading: true});
 
         signin({
             email: this.state.email,
@@ -44,6 +47,8 @@ export default class Signin extends Component {
         })
         .catch((error) => {
             console.log(error);
+
+            this.setState({loading: false});
         });
     }
 

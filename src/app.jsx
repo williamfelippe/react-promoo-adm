@@ -23,8 +23,8 @@ import CreateStore from './containers/stores/create-store';
 import Users from './containers/users/users';
 import UserDetail from './containers/users/user-detail';
 
-import EditEmail from './containers/users/edit-email';
-import EditPassword from './containers/users/edit-password';
+import EditEmail from './containers/system/edit-email';
+import EditPassword from './containers/system/edit-password';
 
 import {isLoggedIn} from './utils/user-information-store';
 

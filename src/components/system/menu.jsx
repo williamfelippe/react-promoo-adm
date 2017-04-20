@@ -6,13 +6,24 @@ export default class Menu extends Component {
         return (
             <ul>
                 <li>
-                    <Link to="/ofertas"></Link>
+                    <Link to="/ofertas">
+                        Ofertas
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/lojas"></Link>
+                    <Link to="/lojas">
+                        Lojas
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/usuarios"></Link>
+                    <Link to="/usuarios">
+                        Usuários
+                    </Link>
+                </li>
+                <li>
+                    <a style={{cursor: "pointer"}}>
+                        Sair
+                    </a>
                 </li>
             </ul>
         )
