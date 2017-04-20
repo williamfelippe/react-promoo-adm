@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row, Col} from "react-materialize";
+import {Row, Col} from "reactstrap";
 import UserList from "../../components/users/user-list";
 
 export default class Users extends Component {
@@ -14,13 +14,13 @@ export default class Users extends Component {
     render() {
         return (
             <Row>
-                <Col s={12}>
+                <Col xs={12}>
                     <h1>
                         Usuários
                     </h1>
                 </Col>
 
-                <Col s={12}>
+                <Col xs={12}>
                     <UserList users={this.state.users} />
                 </Col>
             </Row>

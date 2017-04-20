@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row, Col} from "react-materialize";
+import {Row, Col} from "reactstrap";
 import Brand from "./brand";
 import Menu from "./menu";
 
@@ -8,10 +8,10 @@ export default class Header extends Component {
         return (
             <header>
                 <Row>
-                    <Col s={12} m={3}>
+                    <Col xs={12} m={3}>
                         <Brand />
                     </Col>
-                    <Col s={12} m={9}>
+                    <Col xs={12} m={9}>
                         <Menu />
                     </Col>
                 </Row>

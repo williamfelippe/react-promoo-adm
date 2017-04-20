@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
 import ReportItem from "./report-item";
 
 export default class ReportList extends Component {

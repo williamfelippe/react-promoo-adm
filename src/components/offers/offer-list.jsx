@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row} from "react-materialize";
+import {Row} from "reactstrap";
 
 export default class OfferList extends Component {
     render() {

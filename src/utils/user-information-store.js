@@ -1,50 +1,50 @@
 import Store from "store";
 
-export const createUserStore = (_id, name, email, photo, token, settings) => {
-    const data = {
-        _id: _id,
-        name: name,
-        email: email,
-        photo: photo,
-        token: token,
-        settings: settings
+export const createUserStore = (data) => {
+    const user = {
+        _id: data.user._id,
+        email: data.user.email,
+        name: data.user.name,
+        photo:data.user.photo,
+        settings: data.user.setting,
+        token: data.token
     };
 
-    Store.set('user', data);
+    Store.set('admin', user);
 };
 
 export const getLoggedUserId = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user._id : -1;
 };
 
 export const getLoggedUserAvatar = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user.photo : null;
 };
 
 export const getLoggedUserName = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user.name : "";
 };
 
 export const getLoggedUserEmail = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user.email : "";
 };
 
 export const getLoggedUserToken = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user.token : "";
 };
 
 export const getLoggedUser = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (verifyIfExistUserInformationSaved(user)) ? user : null;
 };
 
 export const isLoggedIn = () => {
-    const user = Store.get('user');
+    const user = Store.get('admin');
     return (user && user !== undefined && user.admin);
 };
 

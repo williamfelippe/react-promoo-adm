@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Row, Col} from "react-materialize";
+import {Row, Col} from "reactstrap";
 import StoreList from "../../components/stores/store-list";
 
 export default class Stores extends Component {
@@ -14,13 +14,13 @@ export default class Stores extends Component {
     render() {
         return (
             <Row>
-                <Col s={12}>
+                <Col xs={12}>
                     <h1>
                         Lojas
                     </h1>
                 </Col>
 
-                <Col s={12}>
+                <Col xs={12}>
                     <StoreList stores={this.state.stores} />
                 </Col>
             </Row>
