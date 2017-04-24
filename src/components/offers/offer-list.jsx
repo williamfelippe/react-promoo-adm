@@ -5,11 +5,11 @@ export default class OfferList extends Component {
     render() {
         const {offers} = this.props;
 
-        const offerList = offers.map((offer) => {
+        const offerList = offers.map((offer) =>
             <li key={offer._id}>
                 <OfferItem offer={offer} />
             </li>
-        })
+        )
 
         return (
             <ul>

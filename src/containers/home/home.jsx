@@ -24,9 +24,9 @@ class HomeCard extends Component {
 
 class HomeCards extends Component {
     render() {
-        const cards = this.props.infos.map((card, index) => {
+        const cards = this.props.infos.map((card, index) =>
             <HomeCard card={card} key={index} />
-        });
+        );
 
         return ({cards});
     }

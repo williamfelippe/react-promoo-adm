@@ -11,6 +11,8 @@ export const createUserStore = (data) => {
     };
 
     Store.set('admin', user);
+
+    console.log(Store.get('admin'));
 };
 
 export const getLoggedUserId = () => {

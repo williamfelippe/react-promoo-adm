@@ -5,11 +5,11 @@ export default class StoreList extends Component {
     render() {
         const {stores} = this.props;
 
-        const storesList = stores.map((store) => {
+        const storesList = stores.map((store) =>
             <li key={store._id}>
                 <StoreItem store={store} />
             </li>
-        })
+        );
 
         return (
             <ul>
