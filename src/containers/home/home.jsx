@@ -28,16 +28,25 @@ class HomeCards extends Component {
             <HomeCard card={card} key={index} />
         );
 
-        return ({cards});
+        return (
+            <CardDeck>
+                {cards}
+            </CardDeck>
+        );
     }
 }
 
 export default class Home extends Component {
+    constructor() {
+        super();
+        this.state = {
+            infos: [{_id: 1, name: "teste"}, {_id: 2, name: "teste2"}, {_id: 3, name: "teste3"}]
+        }
+    }
+
     render() {
         return (
-            <CardDeck>
-                <HomeCards />
-            </CardDeck>
+            <HomeCards infos={this.state.infos} />
         );
     }
 }

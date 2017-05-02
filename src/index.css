@@ -1,7 +1,12 @@
 /* GENERAL CONFIGURATION OF APP */
 html {
     color: rgba(27, 28, 57, 0.8) !important;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Muli', sans-serif;
 }
 
 .moo-app {
@@ -12,12 +17,16 @@ html {
 
 main {
     flex: 1 0 auto;
+    padding-bottom: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
+h1 {
+    text-align: center;
 }
 
-h2 {
-    margin: 40px 0 60px;
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }

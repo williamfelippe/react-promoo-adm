@@ -1,0 +1,21 @@
+.moo-menu {
+    list-style: none;
+    float: right;
+}
+
+.moo-menu li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.moo-menu li a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.moo-menu li a:hover,
+.moo-menu li a:focus {
+    text-decoration: none;
+    color: rgba(255, 83, 83, 0.8);
+}

@@ -1,6 +1,10 @@
 import axios from "axios";
 import {getLoggedUserToken} from "../utils/user-information-store";
 
+export const getUsers = (limit, offset) => {
+    return axios.get(`users/${limit}/${offset}`);
+};
+
 export const getUser = (_id) => {
     return axios.get(`user/${_id}`);
 };

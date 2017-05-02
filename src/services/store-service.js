@@ -26,7 +26,7 @@ export const getStoreCategories = () => {
     return axios.get('store_category');
 };
 
-export const getStoreReports = () => {
+export const getStoreReports = (data) => {
     axios.defaults.headers.common['Authorization'] = getLoggedUserToken();
     return axios.post('store/report', data);
 };

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {ListGroup, ListGroupItem} from "reactstrap";
 import OfferItem from "./offer-item";
 
 export default class OfferList extends Component {
@@ -6,15 +7,15 @@ export default class OfferList extends Component {
         const {offers} = this.props;
 
         const offerList = offers.map((offer) =>
-            <li key={offer._id}>
+            <ListGroupItem key={offer._id}>
                 <OfferItem offer={offer} />
-            </li>
+            </ListGroupItem>
         )
 
         return (
-            <ul>
+            <ListGroup>
                 {offerList}
-            </ul>
+            </ListGroup>
         )
     }
 }

@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.moo-logo-text:hover,
+.moo-logo-text:focus {
+    text-decoration: none;
+}
+
 @media all and (max-width: 768px) {
     .moo-logo-text h4 {
         margin: 0 0 10px;
@@ -12,6 +17,7 @@
 .moo-logo-text h4 {
     font-family: 'Yellowtail', cursive;
     color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
 }
 
 .moo-logo-text h4 span {

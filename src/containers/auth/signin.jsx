@@ -37,9 +37,11 @@ export default class Signin extends Component {
         .then((response) => {
             const statusCode = response.status;
 
+            console.log(response.data);
+
             if(statusCode === REQUEST_SUCCESS) {
                 createUserStore(response.data);
-                browserHistory.push('/');
+                browserHistory.replace('/');
             }
             else {
                 throw new Error(response);

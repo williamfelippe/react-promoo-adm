@@ -9,13 +9,13 @@ export default class Footer extends Component {
             <footer className="page-footer">
                 <div className="container">
                     <Row>
-                        <Col xs={5} m={3}>
+                        <Col xs={5} md={3}>
                             <Brand />
                         </Col>
 
-                        <Col xs={7} m={9}>
+                        <Col xs={7} md={9}>
                             <Row className="row">
-                                <Col xs={12} m={4} l={3} offset="l3">
+                                <Col xs={12} md={4} lg={3} offset="l3">
                                     <strong className="white-text">Apps</strong>
                                     <ul>
                                         <li>
@@ -27,7 +27,7 @@ export default class Footer extends Component {
                                     </ul>
                                 </Col>
 
-                                <Col xs={12} m={4} l={3}>
+                                <Col xs={12} md={4} lg={3}>
                                     <strong className="white-text">Redes sociais</strong>
                                     <ul className="moo-social-media">
                                         <li>

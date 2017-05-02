@@ -30,7 +30,9 @@ import {isLoggedIn} from './utils/user-information-store';
 
 export default class App extends Component {
     requireAuth(nextState, replace) {
-        if(!isLoggedIn()) replace('/entrar');
+        if (!isLoggedIn()) {
+            replace('/entrar');
+        }
     }
 
     render() {
@@ -42,20 +44,26 @@ export default class App extends Component {
 
                     <Route path="/">
                         <Route component={DashboardLayout}>
-                            <IndexRoute component={Home} onEnter={this.requireAuth} />
-                            <Route path="ofertas" component={Offers} onEnter={this.requireAuth} />
-                            <Route path="oferta/:offerId" component={OfferDetail} onEnter={this.requireAuth} />
-                            <Route path="criar-oferta" component={CreateOffer} onEnter={this.requireAuth} />
+                            <IndexRoute component={Home} onEnter={this.requireAuth}/>
+                            <Route path="ofertas" component={Offers} onEnter={this.requireAuth}/>
+                            <Route
+                                path="oferta/:offerId"
+                                component={OfferDetail}
+                                onEnter={this.requireAuth}/>
+                            <Route path="criar-oferta" component={CreateOffer} onEnter={this.requireAuth}/>
 
-                            <Route path="lojas" component={Stores} onEnter={this.requireAuth} />
-                            <Route path="loja/:storeId" component={StoreDetail} onEnter={this.requireAuth} />
-                            <Route path="criar-loja" component={CreateStore} onEnter={this.requireAuth} />
+                            <Route path="lojas" component={Stores} onEnter={this.requireAuth}/>
+                            <Route path="loja/:storeId" component={StoreDetail} onEnter={this.requireAuth}/>
+                            <Route path="criar-loja" component={CreateStore} onEnter={this.requireAuth}/>
 
-                            <Route path="usuarios" component={Users} onEnter={this.requireAuth} />
-                            <Route path="usuario/:userId" component={UserDetail} onEnter={this.requireAuth} />
+                            <Route path="usuarios" component={Users} onEnter={this.requireAuth}/>
+                            <Route
+                                path="usuario/:userId"
+                                component={UserDetail}
+                                onEnter={this.requireAuth}/>
 
-                            <Route path="editar-email" component={EditEmail} onEnter={this.requireAuth} />
-                            <Route path="editar-senha" component={EditPassword} onEnter={this.requireAuth} />
+                            <Route path="editar-email" component={EditEmail} onEnter={this.requireAuth}/>
+                            <Route path="editar-senha" component={EditPassword} onEnter={this.requireAuth}/>
                         </Route>
                     </Route>
 

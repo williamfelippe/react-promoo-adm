@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import {Link} from "react-router";
+import "./menu.css";
 
 export default class Menu extends Component {
     render() {
         return (
-            <ul>
+            <ul className="moo-menu">
                 <li>
                     <Link to="/ofertas">
                         Ofertas

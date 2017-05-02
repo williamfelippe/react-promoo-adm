@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {ListGroup, ListGroupItem} from "reactstrap";
 import StoreItem from "./store-item";
 
 export default class StoreList extends Component {
@@ -6,15 +7,15 @@ export default class StoreList extends Component {
         const {stores} = this.props;
 
         const storesList = stores.map((store) =>
-            <li key={store._id}>
+            <ListGroupItem key={store._id}>
                 <StoreItem store={store} />
-            </li>
+            </ListGroupItem>
         );
 
         return (
-            <ul>
+            <ListGroup>
                 {storesList}
-            </ul>
+            </ListGroup>
         );
     }
 }
